@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: lightcyan;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 1.5em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navbar img {
+    width: 200px;
+    height: auto;
+    border-radius: 0.2em;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    text-decoration: underline;
+    
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+
+.techniques {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.techniques h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    padding: 0.7em;
+    background-color: #ff6200;
+    border-radius: 10px;
+    width: 70%;
+    justify-self: center;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+
+.upload-methods {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ff6200;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flex to align items nicely */
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center align */
+    height: 20rem;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.upload-methods h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.inputlogos{
+    height: 4em;
+    padding: 0.1em;
+    margin: 0.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;;
+}
+
+.inputlogos:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#textInput{
+    height: 7vh;
+    width: 18vh;
+}
+
+
+
+.inputypes{
+    width: 30%; /* Slightly less than 100% to allow padding */
+    height: 14em; /* Fixed height for consistency */
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    margin: 1em;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+.inputypes:hover{
+    transform: scale(1.1);
+}
+
+
+.speechify-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: space-around; /* Space buttons evenly */
+
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.3s ease;
+    margin: 0.5em; /* Add margin for spacing between buttons */
+}
+
+#speechifyButton {
+    background-color: #ff6200;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;;
+}
+
+#speechifyButton:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#downloadspeechlogo{
+    height: 5em;
+    width: 5em;
+}
+
+#stopspeechlogo{
+    height: 5em;
+    width: 5em;
+}
+
+.uilogos:hover{
+    cursor: pointer;
+
+
+}
+
+#speechifyButton:hover {
+    background-color: darkorange;
+}
+
+#downloadButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#downloadButton:hover {
+    background-color: #0062cc;
+}
+
+#stopButton {
+    background-color: orange;
+    color: white;
+}
+
+#stopButton:hover {
+    background-color: darkorange;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 1.5em 0;
+    margin-top: 20px;
+}

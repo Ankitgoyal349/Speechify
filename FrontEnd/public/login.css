@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* General Styles */
+body {
+    background-color: lightcyan;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 1.5em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navbar img {
+    width: 200px;
+    height: auto;
+    border-radius: 0.2em;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    text-decoration: underline;
+    
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+        display: none; /* Initially hide for mobile */
+    }
+    
+    .nav-links.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 3px 0;
+    }
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #bdb5b78b;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 2em; /* Adjusted padding for mobile */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Make it responsive */
+    max-width: 500px; /* Max width to keep it nice */
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container .btn {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #ff6200;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .btn:hover {
+    background-color: #d15e16;
+}
+
+.login-container p {
+    margin-top: 1em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 1.5em 5%;
+    position: relative;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
